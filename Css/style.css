@@ -131,6 +131,8 @@ nav {
   width: 100%;
 }
 .primary-btn {
+  border: 1px solid white;
+  box-shadow: 0 0 10px white;
   margin: 0 25px 0 40px;
   padding: 17px 34px;
   background-color: #bb0b0b;
@@ -568,90 +570,16 @@ input:focus {
   font-weight: 700;
   line-height: normal;
 }
-.accordion-body {
-  color: #e3edf7;
-}
-.accordion {
-  max-width: 565px;
-}
-.accordion li {
-  margin-bottom: 16px;
-  padding: 26px 20px 52px 42px;
-  color: #0f0d1d;
-  list-style: none;
-  width: 100%;
-  border-radius: 8px;
-  background: #e3edf7;
-  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
-}
-.accordion li label {
+.faqs-parent {
   display: flex;
   align-items: center;
-  padding-bottom: 22px;
-  color: #141f2b;
-  font-family: Fira Sans;
-  font-size: 19px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  cursor: pointer;
-}
-.accordion li .third-label {
-  display: flex;
-  align-items: flex-start;
-}
-.accordion li label::after {
-  content: "+";
-  margin-left: 196px;
-  color: #000;
-  font-family: Jost;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
-.accordion li label.second-label::after {
-  margin-left: 57px;
-  margin-right: -64px;
-}
-.accordion li label.third-label::after {
-  margin-left: 27px;
-  margin-right: 17px;
-}
-.accordion li label span {
-  color: #bb0b0b;
-}
-.accordion .content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s, padding 0.5s;
-  max-width: 451px;
-  color: #5f5f5f;
-  font-family: Roboto;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px; /* 164.706% */
-}
-.accordion input[type="checkbox"]:checked + label + .content {
-  max-height: 207px;
-}
-.accordion input[type="checkbox"]:checked + label::after {
-  content: "-";
-  font-size: 25px;
-}
-
-input[type="checkbox"] {
-  display: none;
+  gap: 62px;
 }
 .accordion-body {
-  /* display: flex; */
-  gap: 66px;
-  align-items: center;
+  width: 50%;
 }
-.accordion__item__header .custom-color {
-  color: #bb0b0b;
+.slider {
+  width: 50%;
 }
 .client-review h4 {
   color: #1e1840;
@@ -893,9 +821,6 @@ footer .copyright {
     height: auto;
     max-width: none;
   }
-  .accordion {
-    margin-left: 22px;
-  }
   footer {
     padding: 90px 0px 50px;
   }
@@ -1098,24 +1023,6 @@ footer .copyright {
   } */
   .faqs {
     padding: 50px 0 100px;
-  }
-  .accordion-body {
-    gap: 50px;
-  }
-  .accordion li {
-    padding: 26px 20px 52px 30px;
-  }
-  .accordion li label span {
-    margin-right: 20px;
-  }
-  .accordion li label::after {
-    margin-left: 170px;
-  }
-  .accordion li label.second-label::after {
-    margin-left: 30px;
-  }
-  .accordion li label.third-label::after {
-    margin-right: 10px;
   }
   .email-form {
     max-width: 260px;
@@ -1349,15 +1256,6 @@ footer .copyright {
   .faqs h3 {
     font-size: 28px;
   }
-  .accordion-body {
-    flex-wrap: wrap;
-    gap: 0;
-  }
-  .accordion {
-    max-width: unset;
-    flex-basis: 100%;
-    margin-left: unset;
-  }
   .client-review h4 {
     font-size: 24px;
   }
@@ -1575,20 +1473,6 @@ footer .copyright {
   .other-link {
     flex-basis: 60%;
   }
-  .accordion-body {
-    flex-wrap: wrap;
-  }
-  .accordion {
-    margin-left: 0;
-    max-width: 345px;
-  }
-  .accordion li label.second-label::after {
-    margin-left: 30px;
-    margin-right: 0;
-  }
-  .accordion li label::after {
-    margin-left: 138px;
-  }
   .client-profile {
     display: flex;
     align-items: center;
@@ -1620,6 +1504,7 @@ footer .copyright {
     font-weight: 700;
     line-height: normal;
   }
+
   .move {
     text-align: center;
   }
