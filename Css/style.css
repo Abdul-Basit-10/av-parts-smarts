@@ -646,9 +646,12 @@ input[type="checkbox"] {
   display: none;
 }
 .accordion-body {
-  display: flex;
+  /* display: flex; */
   gap: 66px;
   align-items: center;
+}
+.accordion__item__header .custom-color {
+  color: #bb0b0b;
 }
 .client-review h4 {
   color: #1e1840;
@@ -986,7 +989,7 @@ footer .copyright {
     font-weight: 600;
     line-height: 40px;
   }
-  .info-child-2 h5,
+  /* .info-child-2 h5,
   p {
     position: relative;
     top: -25px;
@@ -994,7 +997,7 @@ footer .copyright {
   .info-child-2 p {
     position: relative;
     top: -20px;
-  }
+  } */
   .contact-us-info-parent .info-child-2 {
     height: auto;
   }
